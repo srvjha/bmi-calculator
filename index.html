@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div style="width: 1200px; padding: 20px 40px; margin: 0 auto; display: flex;">
+        <div class="container">  
+            <form class="container-form" onsubmit="return false">    
+                <div>
+                    <label>Age</label>
+                    <input type="text" id="age" class="input-field" placeholder=" 2 - 120" required>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    
+                    <input type="radio" id="male" name="gender" checked>
+                    <label for="male" style="font-weight: 400;">Male</label>
+                    
+                    <input type="radio" id="female" name="gender">
+                    <label for="female" style="font-weight: 400;">Female</label>
+                </div>
+                
+                <div>
+                    <label >Height</label>
+                    <input type="text" id="height" class="input-field" placeholder="cm" required>
+                </div>
+                <div>
+                    <label>Weight</label>
+                    <input type="text" id="weight" class="input-field" placeholder="kg" required>
+                </div>
+                <button id="calculate">Calculate</button>
+                <button id="clear">Clear</button>
+            </form>  
+            <div class="container-result">
+             <div >
+                <h2>Result</h2>
+                <p>Your BMI is: <span id="result"></span> </p>
+                <p>You are: <span id="message"></span></p>               
+            </div>
+            <div >
+                <img 
+                id="result-gif"
+                src="https://media1.tenor.com/m/_iWxriILby8AAAAd/iyer-jethalal-jethalal-looking-iyer-truck-episode.gif" alt="Jethalal GIF"
+                style="width: 100px; height: 100px; border-radius: 14px;"
+                />
+            </div>
+            
+            </div>
+        </div>
+        <div class="bmi-info">
+            <h2>What is BMI?</h2>
+            <p>Body Mass Index (BMI) is a person’s weight in kilograms divided by the square of height in meters. A high BMI can be an indicator of high body fatness. BMI can be used to screen for weight categories that may lead to health problems but it is not diagnostic of the body fatness or health of an individual.</p>
+            <h2>How is BMI calculated?</h2>
+            <p>Adult BMI is calculated by using a person’s weight and height. The BMI is used to categorize a person as underweight, normal weight, overweight, or obese based on the range into which their BMI falls.</p>
+            <h2>What are the BMI categories?</h2>
+            <p>The standard weight status categories associated with BMI ranges for adults are shown in the following table.</p>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>BMI Range</th>
+                </tr>
+                <tr>
+                    <td>Underweight</td>
+                    <td>Less than 18.5</td>
+                </tr>
+                <tr>
+                    <td>Normal weight</td>
+                    <td>18.5–24.9</td>
+                </tr>
+                <tr>
+                    <td>Overweight</td>
+                    <td>25–29.9</td>
+                </tr>
+                <tr>
+                    <td>Obesity</td>
+                    <td>30 or more</td>
+                </tr>
+            </table>
+        </div>
+   </div>
+
+   <script src="script.js"></script>
+
+   
+</body>
+</html>
