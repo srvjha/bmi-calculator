@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".container")
     const container_form = document.querySelector(".container-form")
     const container_result = document.querySelector(".container-result")
+    const clear = document.querySelector("#clear")
 
     calculate.addEventListener('click', () => {
         console.log({ age, weight, height, gifs }); 
@@ -74,4 +75,13 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+    clear.addEventListener('click', () => {
+         age.value = '';
+         weight.value = '';
+         height.value = '';
+         result.innerHTML = '';
+         message.innerHTML = '';
+
+    })
 });
