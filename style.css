@@ -14,6 +14,11 @@ body {
     background: linear-gradient(135deg, #f6d365, #fda085);
     padding: 20px;
 }
+
+.content-box{
+    display: flex;
+    
+}
 .main-container{
     display: flex;
 }
@@ -170,4 +175,37 @@ table, th, td {
 th {
     background: #ff7e67;
     color: white;
+}
+@media only screen and (max-width: 1000px) {
+    .content-box {
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .container-result {
+        flex-direction: column;
+    }
+    .bmi-info {
+        width: 100%;
+    }
+    .container-result {
+        width: 100%;
+    }
+    .container-form {
+        width: 100%;
+    }
+    .input-field {
+        width: 100%;
+    }
+    .container {
+        margin-right: 0;
+    }
+    .container-result {
+        margin-top: 0;
+    }
 }
