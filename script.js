@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
     const age = document.getElementById('age');
     const weight = document.getElementById('weight');
     const height = document.getElementById('height');
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
                 }, 500); 
             }, 3000);
+            return
         }
         
         
@@ -84,4 +85,4 @@ document.addEventListener("DOMContentLoaded", () => {
          message.innerHTML = '';
 
     })
-});
+
